@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>التذكار سبا | مركز التذكار للعناية بالرجل — المدينة المنورة (نسخة تجريبية)</title>
+<meta name="description" content="مركز التذكار للعناية بالرجل في المدينة المنورة: حلاقة، مساج، حمام مغربي، عناية بالبشرة وباقات.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%234F6F52'/><text x='32' y='42' font-size='28' text-anchor='middle' fill='%23F5F5F2' font-family='serif'>TR</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--marble:#D9D9D6;--char:#3A3D40;--chrome:#A7ADB2;--green:#4F6F52;--off:#F5F5F2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Cairo,system-ui,sans-serif;background:var(--off);color:var(--char);line-height:1.7}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:20;background:rgba(245,245,242,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--marble)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none}
+.mono{width:40px;height:40px;border:2px solid var(--char);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;letter-spacing:1px;font-size:15px}
+.badge-demo{background:var(--green);color:var(--off);font-size:12px;padding:3px 10px;border-radius:99px;font-weight:700;white-space:nowrap}
+.links{display:none;gap:18px;font-weight:600;font-size:15px}.links a{text-decoration:none}
+@media(min-width:900px){.links{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 22px;border-radius:12px;font-weight:700;font-family:inherit;font-size:16px;cursor:pointer;border:2px solid transparent;text-decoration:none}
+.btn-p{background:var(--green);color:#fff}.btn-o{border-color:var(--off);color:var(--off);background:transparent}
+.btn-d{border-color:var(--char);color:var(--char);background:transparent}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:var(--off);overflow:hidden}
+.hero .bg{position:absolute;inset:0;display:grid;grid-template-columns:1fr}
+.hero .bg img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:0;transition:opacity 1.2s}
+.hero .bg img.on{opacity:1}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(58,61,64,.92),rgba(58,61,64,.25))}
+.hero .wrap{position:relative;z-index:2;padding-bottom:56px;width:100%}
+.rating{display:inline-flex;gap:8px;align-items:center;background:rgba(245,245,242,.15);border:1px solid rgba(245,245,242,.4);padding:6px 14px;border-radius:99px;font-weight:700}
+.hero h1{font-size:clamp(30px,6vw,56px);line-height:1.3;margin:14px 0 8px}
+.hero p{font-size:18px;max-width:620px;opacity:.95}
+.cta{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+section{padding:72px 0}
+h2{font-size:clamp(26px,4vw,38px);margin-bottom:6px}
+.sub{color:#5d6166;margin-bottom:30px}
+.alt{background:#fff}
+.grid{display:grid;gap:18px}
+@media(min-width:700px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border:1px solid var(--marble);border-radius:18px;overflow:hidden}
+.alt .card{background:var(--off)}
+.card .ph{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .in{padding:18px}
+.card h3{font-size:20px;margin-bottom:8px}
+.price-list{list-style:none}
+.price-list li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed var(--marble)}
+.price-list li:last-child{border:0}
+.price{font-weight:800;color:var(--green);white-space:nowrap}
+.note{font-size:14px;color:#5d6166;margin-top:8px}
+.pk{padding:24px;border-radius:18px;border:1px solid var(--marble);background:#fff;display:flex;flex-direction:column;gap:10px;position:relative}
+.pk .amt{font-size:34px;font-weight:800;color:var(--char)}.pk .amt small{font-size:15px;font-weight:600}
+.pk.hl{background:var(--green);color:var(--off);border-color:var(--green);box-shadow:0 14px 40px rgba(79,111,82,.35)}
+.pk.hl .amt{color:#fff}
+.pk .tag{position:absolute;top:-12px;left:18px;background:var(--char);color:var(--off);font-size:13px;padding:3px 12px;border-radius:99px;font-weight:700}
+.pk .btn{margin-top:auto}
+.pk.hl .btn{background:var(--off);color:var(--green)}
+.team .av{width:72px;height:72px;border-radius:50%;background:var(--marble);display:grid;place-items:center;font-size:28px;font-weight:800;color:var(--green);margin-bottom:10px}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:800px){.gal{grid-template-columns:repeat(4,1fr)}}
+.gal figure{position:relative;border-radius:14px;overflow:hidden}
+.gal img{aspect-ratio:1;object-fit:cover;width:100%;transition:transform .5s}.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;bottom:0;right:0;left:0;padding:8px 10px;font-size:13px;color:#fff;background:linear-gradient(transparent,rgba(58,61,64,.8))}
+.big{font-size:56px;font-weight:800;color:var(--green);line-height:1}
+.themes{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.themes span{background:#fff;border:1px solid var(--marble);padding:8px 14px;border-radius:99px;font-weight:600}
+.themes span.top{background:var(--green);color:#fff;border-color:var(--green)}
+.map{width:100%;height:340px;border:0;border-radius:18px}
+.hours td{padding:6px 0 6px 18px}
+footer{background:var(--char);color:var(--marble);padding:36px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+.demo-strip{background:var(--marble);text-align:center;font-size:13px;padding:6px}
+</style>
+</head>
+<body>
+<div class="demo-strip">نسخة تجريبية / Demo — موقع تجريبي للعرض فقط وليس الموقع الرسمي</div>
+<header><div class="wrap nav">
+ <a class="brand" href="#top"><span class="mono">TR</span><span>التذكار سبا</span></a>
+ <nav class="links"><a href="#services">الخدمات</a><a href="#packages">الباقات</a><a href="#team">الفريق</a><a href="#gallery">المعرض</a><a href="#reviews">التقييمات</a><a href="#location">الموقع</a></nav>
+ <span class="badge-demo" id="demoBadge">نسخة تجريبية / Demo</span>
+</div></header>
+
+<section class="hero" id="top" style="padding:0">
+ <div class="bg"><img class="on" src="img/photo01.jpg" alt="صالة مركز التذكار"><img src="img/photo03.jpg" alt="ديكور رخامي"><img src="img/photo04.jpg" alt="داخل المركز"></div>
+ <div class="wrap">
+  <span class="rating" id="ratingBadge">★ 4.7 <span style="opacity:.85">(392 تقييم)</span></span>
+  <h1>مركز التذكار للعناية بالرجل<br>في المدينة المنورة</h1>
+  <p>حلاقة، مساج، حمام مغربي، وعناية بالبشرة — في أجواء رخامية فاخرة ونظيفة وخصوصية تامة.</p>
+  <div class="cta">
+   <button class="btn btn-p" id="bookBtn" onclick="openChat()">احجز موعدك</button>
+   <a class="btn btn-o" id="callBtn" href="tel:+966542168979">اتصل 054 216 8979</a>
+  </div>
+ </div>
+</section>
+
+<section id="services"><div class="wrap">
+ <h2>الخدمات والأسعار</h2><p class="sub">الأسعار بالريال السعودي.</p>
+ <div class="grid g3">
+  <div class="card"><img class="ph" loading="lazy" src="img/photo17.jpg" alt="محطة حلاقة"><div class="in"><h3>الحلاقة</h3>
+   <ul class="price-list">
+    <li><span>حلاقة شعر</span><span class="price" data-p="30">30 ر.س</span></li>
+    <li><span>حلاقة لحية</span><span class="price" data-p="30">30 ر.س</span></li>
+    <li><span>حلاقة أطفال</span><span class="price" data-p="30">30 ر.س</span></li>
+    <li><span>تسريح</span><span class="price" data-p="35">35 ر.س</span></li>
+   </ul></div></div>
+  <div class="card"><img class="ph" loading="lazy" src="img/photo18.jpg" alt="محطة حلاقة"><div class="in"><h3>الصبغة والعلاجات</h3>
+   <ul class="price-list">
+    <li><span>صبغة شعر</span><span class="price" data-p="75">75 ر.س</span></li>
+    <li><span>صبغة لحية</span><span class="price" data-p="40">40 ر.س</span></li>
+    <li><span>فرد الشعر</span><span class="price" data-p="150">150 ر.س</span></li>
+    <li><span>علاج بروتين</span><span class="price" data-p="450">450 ر.س</span></li>
+   </ul></div></div>
+  <div class="card"><img class="ph" loading="lazy" src="img/photo29.jpg" alt="سرير العناية بالبشرة"><div class="in"><h3>العناية بالبشرة</h3>
+   <ul class="price-list">
+    <li><span>تنظيف بشرة عميق</span><span class="price" data-p="70">70 ر.س</span></li>
+    <li><span>تنظيف بشرة بالليزر</span><span class="price" data-p="150">150 ر.س</span></li>
+   </ul></div></div>
+  <div class="card"><img class="ph" loading="lazy" src="img/photo24.jpg" alt="غرفة مساج"><div class="in"><h3>المساج</h3>
+   <p>مساج سويدي في غرف خاصة هادئة.</p><p class="note">سعر المساج المنفرد: للسعر تواصل معنا على <a href="tel:+966542168979">054 216 8979</a></p></div></div>
+  <div class="card"><img class="ph" loading="lazy" src="img/photo26.jpg" alt="الحمام المغربي"><div class="in"><h3>الحمام المغربي</h3>
+   <p>من أكثر ما يمدحه عملاؤنا — متوفر ضمن باقات المساج.</p></div></div>
+  <div class="card"><img class="ph" loading="lazy" src="img/photo22.jpg" alt="كرسي سبا القدم"><div class="in"><h3>باديكير ومناكير</h3>
+   <p>متوفر ضمن باقات المساج.</p><p class="note">باقة العريس متوفرة — للسعر تواصل معنا.</p></div></div>
+ </div>
+</div></section>
+
+<section class="alt" id="packages"><div class="wrap">
+ <h2>الباقات</h2><p class="sub">وفّر مع باقاتنا المجمّعة.</p>
+ <div class="grid g3">
+  <div class="pk"><h3>شعر + لحية + تنظيف بشرة عميق</h3><div class="amt" data-p="99">99 <small>ر.س</small></div><button class="btn btn-d" onclick="openChat()">احجز</button></div>
+  <div class="pk"><h3>شعر + لحية + تنظيف بشرة بالليزر</h3><div class="amt" data-p="179">179 <small>ر.س</small></div><button class="btn btn-d" onclick="openChat()">احجز</button></div>
+  <div class="pk"><h3>مساج سويدي ٤٥ دقيقة + حمام مغربي</h3><div class="amt" data-p="229">229 <small>ر.س</small></div><button class="btn btn-d" onclick="openChat()">احجز</button></div>
+  <div class="pk"><h3>مساج + باديكير ومناكير</h3><div class="amt" data-p="229">229 <small>ر.س</small></div><button class="btn btn-d" onclick="openChat()">احجز</button></div>
+  <div class="pk hl" id="pk349"><span class="tag">الأكثر تميزاً</span><h3>مساج + حمام مغربي + باديكير ومناكير</h3><div class="amt" data-p="349">349 <small>ر.س</small></div><button class="btn" onclick="openChat()">احجز الباقة</button></div>
+  <div class="pk"><h3>باقة العريس</h3><div class="amt" style="font-size:20px">للسعر تواصل معنا</div><a class="btn btn-d" href="tel:+966542168979">اتصل</a></div>
+ </div>
+</div></section>
+
+<section id="team" class="team"><div class="wrap">
+ <h2>فريقنا</h2><p class="sub">حلاقون مغاربة محترفون وفريق متخصص في الحمام المغربي.</p>
+ <div class="grid g3">
+  <div class="card"><div class="in"><div class="av">ع</div><h3>علي</h3><p>حلاق</p></div></div>
+  <div class="card"><div class="in"><div class="av">ش</div><h3>شعيب</h3><p>حلاق</p></div></div>
+  <div class="card"><div class="in"><div class="av">أ</div><h3>أحمد</h3><p>الحمام المغربي</p></div></div>
+ </div>
+</div></section>
+
+<section class="alt" id="gallery"><div class="wrap">
+ <h2>المعرض</h2><p class="sub">رخام، كروم، ولمسات خضراء.</p>
+ <div class="gal">
+  <figure><img loading="lazy" src="img/photo05.jpg" alt="شعار TR"><figcaption>الشعار</figcaption></figure>
+  <figure><img loading="lazy" src="img/photo10.jpg" alt="الاستقبال"><figcaption>الاستقبال</figcaption></figure>
+  <figure><img loading="lazy" src="img/photo12.jpg" alt="صالة الانتظار"><figcaption>صالة الانتظار</figcaption></figure>
+  <figure><img loading="lazy" src="img/photo13.jpg" alt="صالة الانتظار"><figcaption>الصالة</figcaption></figure>
+  <figure><img loading="lazy" src="img/photo14.jpg" alt="الممر"><figcaption>الممر</figcaption></figure>
+  <figure><img loading="lazy" src="img/photo25.jpg" alt="غرفة مساج"><figcaption>غرف المساج</figcaption></figure>
+  <figure><img loading="lazy" src="img/photo27.jpg" alt="الحمام المغربي"><figcaption>الحمام المغربي</figcaption></figure>
+  <figure><img loading="lazy" src="img/photo28.jpg" alt="غرفة البخار"><figcaption>غرفة البخار</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+ <h2>ماذا يقول عملاؤنا</h2>
+ <div style="display:flex;align-items:center;gap:16px;margin-top:14px"><div class="big">4.7★</div><div>من 392 تقييم على خرائط Google</div></div>
+ <div class="themes">
+  <span class="top">الحمام المغربي</span><span class="top">نظافة عالية</span>
+  <span>ديكور فاخر</span><span>خصوصية</span><span>استقبال وتعامل راقٍ</span><span>أسعار مناسبة</span><span>حلاقون مهرة</span>
+ </div>
+ <p class="note">أبرز ما يمدحه العملاء في تقييماتهم.</p>
+</div></section>
+
+<section class="alt" id="location"><div class="wrap">
+ <h2>الموقع وأوقات العمل</h2>
+ <div class="grid g2" style="margin-top:20px">
+  <div>
+   <p><strong>العنوان:</strong> 5385 طريق الأمير محمد بن عبدالعزيز، بني حارثة، المدينة المنورة 42313</p>
+   <p><strong>الهاتف:</strong> <a href="tel:+966542168979">054 216 8979</a></p>
+   <table class="hours" id="hours" style="margin:12px 0"><tr><td>السبت–الخميس</td><td>١ ظهراً – ١٢ منتصف الليل</td></tr><tr><td>الجمعة</td><td>٣ عصراً – ١٢ منتصف الليل</td></tr></table>
+   <p>♿ المكان مهيأ لذوي الاحتياجات الخاصة (كراسي متحركة).</p>
+   <p style="margin-top:10px">إنستغرام: <a href="https://instagram.com/altethkar4" target="_blank" rel="noopener">@altethkar4</a></p>
+   <div class="cta"><a class="btn btn-p" href="https://www.google.com/maps/search/?api=1&query=24.49235,39.62325" target="_blank" rel="noopener">الاتجاهات في خرائط Google</a></div>
+  </div>
+  <iframe class="map" loading="lazy" title="خريطة الموقع" src="https://maps.google.com/maps?q=24.49235,39.62325&z=16&output=embed"></iframe>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <div style="display:flex;align-items:center;gap:10px"><span class="mono" style="border-color:var(--marble)">TR</span> مركز التذكار للعناية بالرجل — المدينة المنورة</div>
+ <div>نسخة تجريبية / Demo · <a href="https://instagram.com/altethkar4">@altethkar4</a></div>
+</div></footer>
+
+<script>
+function openChat(){ if(window.voiceflow&&window.voiceflow.chat){window.voiceflow.chat.open();} else {window.__openWhenReady=true;} }
+(function(){var imgs=document.querySelectorAll('.hero .bg img'),i=0;setInterval(function(){imgs[i].classList.remove('on');i=(i+1)%imgs.length;imgs[i].classList.add('on')},5000)})();
+(function(d,t){var v=d.createElement(t),s=d.getElementsByTagName(t)[0];v.onload=function(){window.voiceflow.chat.load({verify:{projectID:'6adf6206a9c389a2d015d6c7'},url:'https://general-runtime.voiceflow.com',voice:{url:'https://runtime-api.voiceflow.com'},environmentID:'main',versionVariant:'published'}).then(function(){if(window.__openWhenReady)window.voiceflow.chat.open();});};v.src='https://cdn.voiceflow.com/widget-next/bundle.mjs';v.type='text/javascript';s.parentNode.insertBefore(v,s);})(document,'script');
+</script>
+</body></html>
