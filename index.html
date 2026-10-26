@@ -72,6 +72,7 @@ h2{font-size:clamp(26px,4vw,38px);margin-bottom:6px}
 footer{background:var(--char);color:var(--marble);padding:36px 0;font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
 .demo-strip{background:var(--marble);text-align:center;font-size:13px;padding:6px}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
 </style>
 </head>
 <body>
@@ -90,7 +91,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
   <p>حلاقة، مساج، حمام مغربي، وعناية بالبشرة — في أجواء رخامية فاخرة ونظيفة وخصوصية تامة.</p>
   <div class="cta">
    <button class="btn btn-p" id="bookBtn" onclick="openChat()">احجز موعدك</button>
-   <a class="btn btn-o" id="callBtn" href="tel:+966542168979">اتصل <bdi dir="ltr"><bdi dir="ltr">054 216 8979</bdi></bdi></a>
+   <a class="btn btn-o" id="callBtn" href="tel:+966542168979">اتصل <span class="ltr">054 216 8979</span></a>
   </div>
  </div>
 </section>
@@ -118,7 +119,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
     <li><span>تنظيف بشرة بالليزر</span><span class="price" data-p="150">150 ر.س</span></li>
    </ul></div></div>
   <div class="card"><img class="ph" loading="lazy" src="img/photo24.jpg" alt="غرفة مساج"><div class="in"><h3>المساج</h3>
-   <p>مساج سويدي في غرف خاصة هادئة.</p><p class="note">سعر المساج المنفرد: للسعر تواصل معنا على <a href="tel:+966542168979"><bdi dir="ltr">054 216 8979</bdi></a></p></div></div>
+   <p>مساج سويدي في غرف خاصة هادئة.</p><p class="note">سعر المساج المنفرد: للسعر تواصل معنا على <a href="tel:+966542168979"><span class="ltr">054 216 8979</span></a></p></div></div>
   <div class="card"><img class="ph" loading="lazy" src="img/photo26.jpg" alt="الحمام المغربي"><div class="in"><h3>الحمام المغربي</h3>
    <p>من أكثر ما يمدحه عملاؤنا — متوفر ضمن باقات المساج.</p></div></div>
   <div class="card"><img class="ph" loading="lazy" src="img/photo22.jpg" alt="كرسي سبا القدم"><div class="in"><h3>باديكير ومناكير</h3>
@@ -176,7 +177,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
  <div class="grid g2" style="margin-top:20px">
   <div>
    <p><strong>العنوان:</strong> 5385 طريق الأمير محمد بن عبدالعزيز، بني حارثة، المدينة المنورة 42313</p>
-   <p><strong>الهاتف:</strong> <a href="tel:+966542168979"><bdi dir="ltr">054 216 8979</bdi></a></p>
+   <p><strong>الهاتف:</strong> <a href="tel:+966542168979"><span class="ltr">054 216 8979</span></a></p>
    <table class="hours" id="hours" style="margin:12px 0"><tr><td>السبت–الخميس</td><td>١ ظهراً – ١٢ منتصف الليل</td></tr><tr><td>الجمعة</td><td>٣ عصراً – ١٢ منتصف الليل</td></tr></table>
    <p>♿ المكان مهيأ لذوي الاحتياجات الخاصة (كراسي متحركة).</p>
    <p style="margin-top:10px">إنستغرام: <a href="https://instagram.com/altethkar4" target="_blank" rel="noopener">@altethkar4</a></p>
